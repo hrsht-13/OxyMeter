@@ -149,17 +149,23 @@ if (rad=="Predict your Oxygen level"):
     height=left_col.number_input("Height (cm)",)
     dia=left_col.number_input("Diastolic Blood Pressure (mmHg)",  )
     temp=left_col.number_input("Temperature (°C)",)
-    muscle=left_col.number_input("Muscle Mass (%)",)
-    hyd=left_col.number_input("Hydration (%)", )
+    muscle=(left_col.number_input("Muscle Mass (%)",))/100
+    hyd=(left_col.number_input("Hydration (%)", ))/100
    
     weight=right_col.number_input("Weight (kg)", )
     sys=right_col.number_input("Systolic Blood Pressure (mmHg)",)
     pulse=right_col.number_input("Pulse Rate (BPM)", )
-    bone=right_col.number_input("Bone Mass (%)", )
+    bone=(right_col.number_input("Bone Mass (%)", ))/100
     vel=right_col.number_input("Pulse Wave Velocity (m/s)",)
 
-    m_b=np.round(muscle/bone,2)
-    bmi=np.round(weight*0.1/(height*height*0.00001),2)
+    try:
+      m_b=np.round(muscle/bone,2)
+    except:
+      m_b=0.0
+    try:
+      bmi=np.round(weight*0.1/(height*height*0.00001),2)
+    except:
+      bmi=0.0
 
     check_data=st.checkbox("View Your Values")
     if (check_data):
