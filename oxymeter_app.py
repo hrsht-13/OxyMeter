@@ -51,9 +51,8 @@ if(rad=="Dashboard"):
 
   with header:
     st.title("PowerBI Dashboard")
-    powerBiEmbed = 'https://app.powerbi.com/reportEmbed?reportId=9c3576c1-44d1-4d8a-97fc-41368c5cc569&autoAuth=true&ctid=b9abe56c-43a7-4e67-a17b-32cfa05c95c8&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9'
-    st.write(IFrame(powerBiEmbed, width=800, height=600))
-
+    components.html('<html><body><iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=9c3576c1-44d1-4d8a-97fc-41368c5cc569&autoAuth=true&ctid=b9abe56c-43a7-4e67-a17b-32cfa05c95c8&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe></body></html>',width=1150,height=545)
+   
 
 if(rad=="Distributions"):
   header=st.beta_container()
