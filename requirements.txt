@@ -1,11 +1,9 @@
   
 streamlit
 ipykernel
-pickle
+pickle-mixin
 pillow==7.0.0
 pandas==1.1.5
 seaborn==0.11.1
 numpy>=1.9.2
-tensorflow==2.4.1
-requests==2.23.0
 matplotlib==3.4.2
