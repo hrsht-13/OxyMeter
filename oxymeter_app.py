@@ -179,7 +179,7 @@ if (rad=="Predict your Oxygen level"):
 
     predict=st.button("PREDICT SpO2")
     if(predict):
-      lgb=pickle.load(open("/content/final_model_lgb.sav", 'rb'))
+      lgb=pickle.load(open("final_model_lgb.sav", 'rb'))
       pred=lgb.predict([[weight,height,dia,sys,pulse,temp,muscle,hyd,bone, vel,bmi,m_b]])
       val=float(np.round(pred,2))
       result="Your Spo2 is: " + str(val) +"%"
