@@ -146,17 +146,17 @@ if (rad=="Predict your Oxygen level"):
     left_col,right_col=st.beta_columns(2)
 
     
-    height=left_col.number_input("Height (cm)",172)
-    dia=left_col.number_input("Diastolic Blood Pressure (mmHg)", 93.74 )
-    temp=left_col.number_input("Temperature (°C)",35.03)
-    muscle=left_col.number_input("Muscle Mass (%)", 0.7)
-    hyd=left_col.number_input("Hydration (%)", 0.7)
+    height=left_col.number_input("Height (cm)",)
+    dia=left_col.number_input("Diastolic Blood Pressure (mmHg)",  )
+    temp=left_col.number_input("Temperature (°C)",)
+    muscle=left_col.number_input("Muscle Mass (%)",)
+    hyd=left_col.number_input("Hydration (%)", )
    
-    weight=right_col.number_input("Weight (kg)", 89.59)
-    sys=right_col.number_input("Systolic Blood Pressure (mmHg)",136.81)
-    pulse=right_col.number_input("Pulse Rate (BPM)", 55)
-    bone=right_col.number_input("Bone Mass (%)", 0.03	)
-    vel=right_col.number_input("Pulse Wave Velocity (m/s)",7.99)
+    weight=right_col.number_input("Weight (kg)", )
+    sys=right_col.number_input("Systolic Blood Pressure (mmHg)",)
+    pulse=right_col.number_input("Pulse Rate (BPM)", )
+    bone=right_col.number_input("Bone Mass (%)", )
+    vel=right_col.number_input("Pulse Wave Velocity (m/s)",)
 
     m_b=np.round(muscle/bone,2)
     bmi=np.round(weight*0.1/(height*height*0.00001),2)
