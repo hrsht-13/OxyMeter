@@ -3,7 +3,7 @@
 During a pulse oximetry reading, a small clamp-like device is placed on a finger, earlobe, or toe. Small beams of light pass through the blood in the finger, measuring the amount of oxygen. It does this by measuring changes of light absorption in oxygenated or deoxygenated blood
 ## Oxymeter
 It measure your SpO2 (oxygen saturation level) with the help of body measurements.
-#### About
+### About
 > The dataset used for modeling is taken from Kaggle. 
 
 `Since the dataset is not real but synthetic, predictions need not to be taken seriously.`
@@ -25,5 +25,5 @@ It measure your SpO2 (oxygen saturation level) with the help of body measurement
 > The framework used for this app is Streamlit and is deployed on Heroku.
 
 ## Home Page
-
+![alt text](https://github.com/hrsht-13/OxyMeter/blob/main/home%20page.jpg)
 ### Link : https://oxymeterapp.herokuapp.com/
