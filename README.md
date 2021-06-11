@@ -6,7 +6,7 @@ It measure your SpO2 (oxygen saturation level) with the help of body measurement
 #### About
 > The dataset used for modeling is taken from Kaggle. 
 
-`**Since the dataset is not real but synthetic, predictions need not to be taken seriously. **`
+`Since the dataset is not real but synthetic, predictions need not to be taken seriously.`
 
 > The **Navigation Bar** on the top left corner has been added to access different pages.
 
